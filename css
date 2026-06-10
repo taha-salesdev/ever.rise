@@ -1,1 +1,520 @@
 
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#05080f;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   COLORS
+========================= */
+
+:root{
+    --primary:#0d47a1;
+    --secondary:#1e88e5;
+    --dark:#05080f;
+    --card:#081b3d;
+    --glow:#4fc3f7;
+}
+
+/* =========================
+   GLITTER BACKGROUND
+========================= */
+
+.particles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.particles::before,
+.particles::after{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:
+    radial-gradient(circle, rgba(79,195,247,0.6) 1px, transparent 1px);
+    background-size:40px 40px;
+    opacity:0.12;
+    animation:moveStars 60s linear infinite;
+}
+
+.particles::after{
+    opacity:0.06;
+    animation-direction:reverse;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-300px,-300px);
+    }
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    width:92%;
+    margin:20px auto;
+    padding:18px 30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(8,27,61,0.75);
+    backdrop-filter:blur(20px);
+
+    border-radius:60px;
+    border:1px solid rgba(79,195,247,0.15);
+
+    box-shadow:0 0 25px rgba(79,195,247,0.10);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:var(--glow);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#ffffff;
+    transition:0.3s;
+    font-weight:500;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:var(--glow);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.tagline{
+    color:var(--glow);
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin:20px 0;
+    line-height:1.2;
+    animation:glowText 4s infinite alternate;
+}
+
+.hero p{
+    color:#c7d6ff;
+    margin-bottom:25px;
+}
+
+@keyframes glowText{
+    from{
+        text-shadow:0 0 10px rgba(79,195,247,0.2);
+    }
+    to{
+        text-shadow:0 0 25px rgba(79,195,247,0.6);
+    }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn:hover{
+    background:#1565c0;
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid var(--glow);
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);
+    transition:0.7s;
+}
+
+.btn:hover::before{
+    left:120%;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:60px 20px;
+}
+
+.stat-card{
+    background:rgba(8,27,61,0.7);
+    border-radius:25px;
+    padding:30px;
+    width:220px;
+    text-align:center;
+    border:1px solid rgba(79,195,247,0.1);
+    transition:0.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(79,195,247,0.25);
+}
+
+.stat-card h2{
+    font-size:40px;
+    color:var(--glow);
+}
+
+/* =========================
+   PROGRAMS / CARDS
+========================= */
+
+.program-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:50px 20px;
+}
+
+.card{
+    background:rgba(8,27,61,0.75);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:25px;
+    width:320px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(79,195,247,0.4);
+    box-shadow:0 15px 40px rgba(79,195,247,0.2);
+}
+
+.card h3{
+    color:var(--glow);
+    margin-bottom:10px;
+}
+
+.icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.program-card ul{
+    margin:15px 0;
+    padding-left:18px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    color:var(--glow);
+    margin-top:40px;
+}
+
+.page-hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.page-hero h1{
+    font-size:45px;
+    color:var(--glow);
+}
+
+/* =========================
+   MISSION BOX
+========================= */
+
+.mission-box{
+    max-width:800px;
+    margin:60px auto;
+    padding:40px;
+    background:rgba(8,27,61,0.7);
+    border-radius:25px;
+    border:1px solid rgba(79,195,247,0.1);
+    text-align:center;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px 20px;
+}
+
+.contact-card{
+    width:320px;
+    background:rgba(8,27,61,0.75);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.contact-link{
+    display:inline-block;
+    margin-top:10px;
+    color:var(--glow);
+    text-decoration:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+    border-top:1px solid rgba(255,255,255,0.05);
+    color:#aaa;
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        border-radius:25px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+/* =========================
+   FOUNDER PAGE
+========================= */
+
+.founder-section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px 80px;
+}
+
+.founder-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.founder-text{
+    flex:1;
+}
+
+.founder-tag{
+    color:var(--glow);
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.founder-text h2{
+    font-size:42px;
+    margin:15px 0 25px;
+}
+
+.founder-text p{
+    color:#d5dff5;
+    margin-bottom:18px;
+    line-height:1.9;
+}
+
+.founder-signature{
+    margin-top:30px;
+    color:var(--glow);
+    font-weight:600;
+    font-size:18px;
+}
+
+.founder-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.founder-image img{
+    width:100%;
+    max-width:420px;
+
+    border-radius:35px;
+
+    border:2px solid rgba(79,195,247,.3);
+
+    box-shadow:
+    0 0 25px rgba(79,195,247,.15),
+    0 0 60px rgba(79,195,247,.08);
+
+    transition:.4s;
+}
+
+.founder-image img:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 35px rgba(79,195,247,.25),
+    0 0 90px rgba(79,195,247,.12);
+}
+
+@media(max-width:900px){
+
+    .founder-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .founder-text h2{
+        font-size:32px;
+    }
+
+    .founder-image img{
+        max-width:320px;
+    }
+}
+
+/* =========================
+   ABOUT PAGE FIX (VISION / MISSION)
+========================= */
+
+.vision-mission{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:30px;
+
+    padding:60px 20px;
+    flex-wrap:wrap;
+}
+
+/* Make both cards equal + structured */
+.vision-mission .card{
+    flex:1;
+    min-width:320px;
+    max-width:420px;
+    text-align:left;
+}
+
+/* Center section heading properly */
+.section-title{
+    width:100%;
+    text-align:center;
+    margin:60px 0 20px;
+}
+
+.about-content{
+    text-align:center;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.about-content h2,
+.about-content p{
+    text-align:center;
+}
