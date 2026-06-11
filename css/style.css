@@ -373,18 +373,18 @@ footer{
 
 @media(max-width:768px){
 
-    .hero h1{
-        font-size:38px;
-    }
-
     nav{
         flex-direction:column;
-        gap:15px;
+        gap:20px;
         border-radius:25px;
     }
 
     nav ul{
+        justify-content:center;
         flex-wrap:wrap;
+    }
+
+    .social-links{
         justify-content:center;
     }
 }
@@ -517,4 +517,57 @@ footer{
 .about-content h2,
 .about-content p{
     text-align:center;
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.social-links a,
+.footer-social a{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:#fff;
+    text-decoration:none;
+
+    background:rgba(79,195,247,.08);
+
+    border:1px solid rgba(79,195,247,.2);
+
+    transition:.35s;
+}
+
+.social-links a:hover,
+.footer-social a:hover{
+
+    transform:translateY(-4px);
+
+    color:#4fc3f7;
+
+    box-shadow:
+    0 0 15px rgba(79,195,247,.4),
+    0 0 30px rgba(79,195,247,.2);
+}
+
+.footer-social{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+
+    margin:20px 0;
 }
