@@ -1,4 +1,3 @@
-
 /* =========================
    SCROLL REVEAL ANIMATION
 ========================= */
@@ -60,6 +59,22 @@ links.forEach(link => {
         this.classList.add("active");
     });
 });
+
+
+/* =========================
+   COPY DONATION DETAILS
+========================= */
+
+function copyText(id){
+
+    const text =
+    document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    alert("Copied Successfully!");
+
+}
 
 
 /* =========================
