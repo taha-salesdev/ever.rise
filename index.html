@@ -9,15 +9,21 @@
     <meta name="description"
         content="Ever Rise is a community NGO in Bahawalpur dedicated to poverty alleviation, hunger relief & Rozgar livelihood support. Donate to transform needy families.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ever-rise-org.vercel.app/">
+    <link rel="canonical" href="https://everrise.org.pk/">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Ever Rise NGO – Empowering Bahawalpur Families">
     <meta property="og:description"
         content="Ever Rise NGO is dedicated to hunger relief through Rashan drives and sustainable Rozgar small business setups in Bahawalpur.">
-    <meta property="og:url" content="https://ever-rise-org.vercel.app/">
+    <meta property="og:url" content="https://everrise.org.pk/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ever-rise-org.vercel.app/ever.rise.jpeg">
+    <meta property="og:image" content="https://everrise.org.pk/ever.rise.jpeg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ever Rise NGO – Empowering Bahawalpur Families">
+    <meta name="twitter:description" content="Ever Rise NGO is dedicated to hunger relief through Rashan drives and sustainable Rozgar small business setups in Bahawalpur.">
+    <meta name="twitter:image" content="https://everrise.org.pk/ever.rise.jpeg">
 
     <!-- Structured Data (JSON-LD) for NGO / Organization -->
     <script type="application/ld+json">
@@ -25,8 +31,8 @@
       "@context": "https://schema.org",
       "@type": "NGO",
       "name": "Ever Rise",
-      "url": "https://ever-rise-org.vercel.app/",
-      "logo": "https://ever-rise-org.vercel.app/ever.rise.jpeg",
+      "url": "https://everrise.org.pk/",
+      "logo": "https://everrise.org.pk/ever.rise.jpeg",
       "description": "Ever Rise is a nonprofit based in Bahawalpur, Pakistan, supporting underprivileged families through sustainable community development, education, and hunger relief programs.",
       "address": {
         "@type": "PostalAddress",
@@ -34,11 +40,23 @@
         "addressRegion": "Punjab",
         "addressCountry": "Pakistan"
       },
+      "telephone": "+92-300-0000000",
+      "email": "info@everrise.org.pk",
       "sameAs": [
         "https://www.instagram.com/ever.rise.1187/",
         "https://www.facebook.com/profile.php?id=61590970520657",
         "https://www.tiktok.com/@ever.rise.1187"
       ]
+    }
+    </script>
+    
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Ever Rise",
+      "url": "https://everrise.org.pk/"
     }
     </script>
 
@@ -61,13 +79,26 @@
     <!-- Navbar -->
 
     <nav>
-
-        <div class="nav-left">
-
-            <div class="logo">
+        <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        <div class="logo">
                 Ever Rise
             </div>
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="founder.html">Founder</a></li>
+            <li><a href="projects.html">Programs</a></li>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right" style="display:flex; align-items:center; gap:20px;">
             <div class="social-links">
 
                 <a href="https://www.instagram.com/ever.rise.1187/" target="_blank" rel="noopener noreferrer"
@@ -86,26 +117,13 @@
                 </a>
 
             </div>
-
-            <a href="donate.html" class="donate-btn">
-                Donate Us
-            </a>
-
         </div>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="founder.html">Founder</a></li>
-            <li><a href="projects.html">Programs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
 
     </nav>
 
     <!-- Hero Section -->
 
-    <section class="hero">
+    <section class="hero" style="background: linear-gradient(to bottom, rgba(5,8,15,0.55) 0%, rgba(5,8,15,0.75) 100%), url('hero-bg.jpg') center center / cover no-repeat; min-height: 88vh;">
 
         <div class="hero-content">
 
@@ -142,18 +160,18 @@
     <section class="stats reveal">
 
         <div class="stat-card">
-            <h2 class="counter" data-target="250">0</h2>
-            <p>Expecting Families To Be Supported By 2026</p>
+            <h2 class="counter" data-target="2">0</h2>
+            <p>Rashan Cases Completed</p>
         </div>
 
         <div class="stat-card">
-            <h2 class="counter" data-target="40">0</h2>
-            <p>Expecting Rozgar Cases By 2026</p>
+            <h2 class="counter" data-target="1">0</h2>
+            <p>Active Case In Progress</p>
         </div>
 
         <div class="stat-card">
-            <h2 class="counter" data-target="12">0</h2>
-            <p>Expecting Monthly Drives By 2026</p>
+            <h2 class="counter" data-target="12000">0</h2>
+            <p>PKR Worth of Rashan Delivered</p>
         </div>
 
     </section>
@@ -200,25 +218,77 @@
 
     </section>
 
+    <!-- Why We Exist -->
+    <section class="program-section">
+        <h2 class="section-title reveal">Why Ever Rise Exists</h2>
+        <div class="program-grid">
+            <div class="card reveal">
+                <div class="icon glow">🙏</div>
+                <h3>Dignity First</h3>
+                <p>We believe every family deserves to eat with dignity. Our Rashan packages are delivered with respect, not just resources — ensuring recipients feel valued and supported.</p>
+            </div>
+            <div class="card reveal">
+                <div class="icon glow">🌱</div>
+                <h3>Root Cause Focus</h3>
+                <p>Food relief is a short-term fix. Through our Rozgar program, we aim to address the root cause of poverty by helping individuals earn a sustainable livelihood.</p>
+            </div>
+            <div class="card reveal">
+                <div class="icon glow">🔍</div>
+                <h3>Case-by-Case Verification</h3>
+                <p>Every case is personally verified by our team before any funds are allocated. We never distribute aid blindly — transparency and accountability are non-negotiable.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Mission Section -->
 
     <section class="mission reveal">
 
         <div class="mission-box">
 
-            <h2>
-                Our Mission
-            </h2>
+            <h2>Our Mission</h2>
 
             <p>
                 We believe true charity is not only helping people survive,
-                but empowering them to become self-sufficient. Through Rashan
-                and Rozgar initiatives, Ever Rise works to create lasting impact
-                in communities across Bahawalpur and Punjab.
+                but empowering them to become self-sufficient. Through our Rashan
+                monthly food support initiative, Ever Rise directly addresses hunger
+                in underprivileged communities across Bahawalpur and Punjab.
+                Every rupee donated goes to a verified family in need — no middlemen,
+                no waste, just direct impact.
             </p>
+
+            <br>
+            <a href="cases.html" class="btn" style="display:inline-block; margin-top:10px;">See Our Cases</a>
 
         </div>
 
+    </section>
+
+    <!-- How It Works -->
+    <section class="program-section">
+        <h2 class="section-title reveal">How It Works</h2>
+        <div class="program-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div class="card reveal" style="text-align:center;">
+                <div style="font-size:40px; margin-bottom:15px;">📋</div>
+                <h3>Step 1</h3>
+                <p>A family or individual submits their case via WhatsApp or a community reference.</p>
+            </div>
+            <div class="card reveal" style="text-align:center;">
+                <div style="font-size:40px; margin-bottom:15px;">🔎</div>
+                <h3>Step 2</h3>
+                <p>Our team visits and verifies the need — income status, family size, living conditions.</p>
+            </div>
+            <div class="card reveal" style="text-align:center;">
+                <div style="font-size:40px; margin-bottom:15px;">✅</div>
+                <h3>Step 3</h3>
+                <p>The case is approved and posted publicly. Donors can fund a specific case directly.</p>
+            </div>
+            <div class="card reveal" style="text-align:center;">
+                <div style="font-size:40px; margin-bottom:15px;">🚚</div>
+                <h3>Step 4</h3>
+                <p>Rashan is purchased and delivered personally to the family. Photos are shared for accountability.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -248,6 +318,11 @@
                 <i class="fab fa-tiktok"></i>
             </a>
 
+        </div>
+
+        <div style="margin: 15px 0;">
+            <a href="impact.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Transparency</a>
+            <a href="blog.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Blog</a>
         </div>
 
         <p class="copyright">
