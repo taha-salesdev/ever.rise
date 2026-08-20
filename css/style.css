@@ -895,3 +895,30 @@ footer h3 {
 .social-links a:nth-child(3):hover {
     color: #25F4EE;
 }
+
+.footer-social a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    display: block;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+.footer-social a:hover {
+    color: #4fc3f7;
+}
+
+.footer-social a:first-child:hover {
+    color: #E4405F;
+}
+
+.footer-social a:nth-child(2):hover {
+    color: #1877F2;
+}
+
+.footer-social a:nth-child(3):hover {
+    color: #25F4EE;
+}
