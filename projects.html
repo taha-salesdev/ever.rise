@@ -9,32 +9,49 @@
     <meta name="description"
         content="Explore Ever Rise NGO's core initiatives: monthly Rashan food distributions and Rozgar small business empowerment setups for families in Bahawalpur.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ever-rise-org.vercel.app/projects">
+    <link rel="canonical" href="https://everrise.org.pk/projects.html">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Rashan & Rozgar Programs | Ever Rise NGO">
     <meta property="og:description"
         content="Focused on real community impact: monthly food security and small business income generation programs in Bahawalpur.">
-    <meta property="og:url" content="https://ever-rise-org.vercel.app/projects">
+    <meta property="og:url" content="https://everrise.org.pk/projects.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ever-rise-org.vercel.app/ever.rise.jpeg">
+    <meta property="og:image" content="https://everrise.org.pk/ever.rise.jpeg">
 
-    <!-- Structured Data (JSON-LD) Breadcrumbs -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rashan & Rozgar Programs | Ever Rise NGO">
+    <meta name="twitter:description" content="Focused on real community impact: monthly food security and small business income generation programs in Bahawalpur.">
+    <meta name="twitter:image" content="https://everrise.org.pk/ever.rise.jpeg">
+
+    <!-- Structured Data (JSON-LD) Breadcrumbs & WebPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ever-rise-org.vercel.app/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Programs",
-        "item": "https://ever-rise-org.vercel.app/projects"
-      }]
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://everrise.org.pk/projects.html",
+          "url": "https://everrise.org.pk/projects.html",
+          "name": "Programs",
+          "description": "Explore Ever Rise NGO's core initiatives: monthly Rashan food distributions and Rozgar small business empowerment setups for families in Bahawalpur."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://everrise.org.pk/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Programs",
+            "item": "https://everrise.org.pk/projects.html"
+          }]
+        }
+      ]
     }
     </script>
 
@@ -56,13 +73,26 @@
 
     <!-- Navigation -->
     <nav>
-
-        <div class="nav-left">
-
-            <div class="logo">
+        <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        <div class="logo">
                 Ever Rise
             </div>
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="founder.html">Founder</a></li>
+            <li><a href="projects.html">Programs</a></li>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right" style="display:flex; align-items:center; gap:20px;">
             <div class="social-links">
 
                 <a href="https://www.instagram.com/ever.rise.1187/" target="_blank" rel="noopener noreferrer"
@@ -81,18 +111,7 @@
                 </a>
 
             </div>
-            <a href="donate.html" class="donate-btn">
-                Donate Us
-            </a>
         </div>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="founder.html">Founder</a></li>
-            <li><a href="projects.html">Programs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
 
     </nav>
 
@@ -229,6 +248,11 @@
                 <i class="fab fa-tiktok"></i>
             </a>
 
+        </div>
+
+        <div style="margin: 15px 0;">
+            <a href="impact.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Transparency</a>
+            <a href="blog.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Blog</a>
         </div>
 
         <p class="copyright">
