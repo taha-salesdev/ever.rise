@@ -9,32 +9,49 @@
     <meta name="description"
         content="Donate to Ever Rise NGO via HBL, NayaPay, or Easypaisa. Your support directly funds monthly food packages and small business setups for deserving families.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ever-rise-org.vercel.app/donate">
+    <link rel="canonical" href="https://everrise.org.pk/donate.html">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Donate to Ever Rise NGO – Support Rashan & Rozgar Drives">
     <meta property="og:description"
         content="Donate to Ever Rise NGO. Your support directly funds monthly food packages and small business setups for deserving families in Bahawalpur.">
-    <meta property="og:url" content="https://ever-rise-org.vercel.app/donate">
+    <meta property="og:url" content="https://everrise.org.pk/donate.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ever-rise-org.vercel.app/ever.rise.jpeg">
+    <meta property="og:image" content="https://everrise.org.pk/ever.rise.jpeg">
 
-    <!-- Structured Data (JSON-LD) Breadcrumbs -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donate to Ever Rise NGO – Support Rashan & Rozgar Drives">
+    <meta name="twitter:description" content="Donate to Ever Rise NGO. Your support directly funds monthly food packages and small business setups for deserving families in Bahawalpur.">
+    <meta name="twitter:image" content="https://everrise.org.pk/ever.rise.jpeg">
+
+    <!-- Structured Data (JSON-LD) Breadcrumbs & DonateAction -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ever-rise-org.vercel.app/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Donate",
-        "item": "https://ever-rise-org.vercel.app/donate"
-      }]
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://everrise.org.pk/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Donate",
+            "item": "https://everrise.org.pk/donate.html"
+          }]
+        },
+        {
+          "@type": "DonateAction",
+          "recipient": {
+            "@type": "NGO",
+            "name": "Ever Rise"
+          }
+        }
+      ]
     }
     </script>
 
@@ -54,13 +71,26 @@
     <div class="particles"></div>
 
     <nav>
-
-        <div class="nav-left">
-
-            <div class="logo">
+        <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        <div class="logo">
                 Ever Rise
             </div>
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="founder.html">Founder</a></li>
+            <li><a href="projects.html">Programs</a></li>
+            <li><a href="cases.html">Case Studies</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="impact.html">Impact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right" style="display:flex; align-items:center; gap:20px;">
             <div class="social-links">
 
                 <a href="https://www.instagram.com/ever.rise.1187/" target="_blank" rel="noopener noreferrer"
@@ -79,18 +109,7 @@
                 </a>
 
             </div>
-            <a href="donate.html" class="donate-btn">
-                Donate Us
-            </a>
         </div>
-
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="founder.html">Founder</a></li>
-            <li><a href="projects.html">Programs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
 
     </nav>
 
@@ -261,6 +280,11 @@
                 <i class="fab fa-tiktok"></i>
             </a>
 
+        </div>
+
+        <div style="margin: 15px 0;">
+            <a href="impact.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Transparency</a>
+            <a href="blog.html" style="color: #aaa; text-decoration: none; margin: 0 10px;">Blog</a>
         </div>
 
         <p class="copyright">
