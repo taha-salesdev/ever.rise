@@ -697,7 +697,7 @@ footer{
     color:white;
     text-decoration:none;
 
-    padding:28px 28px;
+    padding:12px 28px;
 
     border-radius:50px;
 
@@ -890,4 +890,41 @@ footer{
 
         gap:15px 25px;
     }
+}
+
+/* =========================
+   CENTER DONATE BUTTON
+========================= */
+
+nav {
+    position: relative;
+}
+
+.donate-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Keep hover animation working */
+.donate-btn:hover {
+    transform: translateX(-50%) translateY(-3px);
+}
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .donate-btn {
+        position: static;
+        transform: none;
+    }
+
+    .donate-btn:hover {
+        transform: translateY(-3px);
+    }
+
 }
