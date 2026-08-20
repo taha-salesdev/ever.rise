@@ -120,13 +120,56 @@ nav ul li a.active{
    HERO
 ========================= */
 
+/* =========================
+   HERO
+========================= */
+
 .hero{
-    height:85vh;
+    min-height:85vh;
+    height:auto;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:20px;
+    padding:100px 20px 80px;
+    position:relative;
+    z-index:1;
+}
+
+.hero-content{
+    max-width:900px;
+    width:100%;
+    position:relative;
+    z-index:2;
+}
+
+.tagline{
+    display:block;
+    color:var(--glow);
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin:20px 0;
+    line-height:1.2;
+    animation:glowText 4s infinite alternate;
+}
+
+.hero p{
+    color:#c7d6ff;
+    margin-bottom:25px;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .hero-content{
@@ -925,6 +968,27 @@ nav {
 
     .donate-btn:hover {
         transform: translateY(-3px);
+    }
+
+}
+@media(max-width:768px){
+
+    .hero{
+        min-height:auto;
+        padding:80px 20px 70px;
+    }
+
+    .hero h1{
+        font-size:40px;
+        line-height:1.2;
+    }
+
+    .tagline{
+        font-size:13px;
+    }
+
+    .hero p{
+        font-size:14px;
     }
 
 }
